@@ -192,7 +192,7 @@ class Ffmpeg < Formula
       end
     end
 
-    system "./configure", *args
+    system "./configure  --enable-libsvtav1", *args
     system "make", "install"
 
     # Build and install additional FFmpeg tools
