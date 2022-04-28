@@ -116,6 +116,7 @@ class Ffmpeg < Formula
       --enable-libfontconfig
       --enable-libfreetype
       --enable-frei0r
+      --enable-libsvtav1
       --enable-libass
       --enable-demuxer=dash
     ]
@@ -192,7 +193,7 @@ class Ffmpeg < Formula
       end
     end
 
-    system "./configure  --enable-libsvtav1", *args
+    system "./configure", *args
     system "make", "install"
 
     # Build and install additional FFmpeg tools
